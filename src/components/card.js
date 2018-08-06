@@ -1,3 +1,4 @@
 handleInputChange(event) {
-    this.setState({ color: event.target.value })
+    this.setState({ [event.target.name]: event.target.value })
+    console.log(this.state)       
 }
